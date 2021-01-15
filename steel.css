@@ -1,0 +1,56 @@
+
+.menu {
+    background-color: black;
+    margin: 0 0;
+}
+.menu li {
+    list-style-type: none;
+    Display: inline;
+    color: white;
+    padding: 10px;
+}
+
+
+body {
+    background-image: url("https://asmartjob.com/wp-content/uploads/asmartjob_blog_open-space.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+#gif {
+    grid-area: main;
+    display: flex;
+    weight: 150px;
+    height: 150px;
+    align-self: center;
+}
+
+#not-found {
+    grid-area: center;
+    font-size: 200%;
+    display: flex;
+    font-weight: bold;
+    align-self: content;
+}
+
+#not-found h1 {
+    font-weight: bold;
+}
+
+
+
+.container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+               "header header header"
+               "center ......  main"
+               "footer  footer  footer";
+
+  }
