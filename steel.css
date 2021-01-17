@@ -13,44 +13,62 @@
 
 body {
     background-image: url("https://asmartjob.com/wp-content/uploads/asmartjob_blog_open-space.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    align-items: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-align: inherit;
+    color: inherit;
     width: 100%;
     height: 100%;
 
 }
 
 #gif {
-    grid-area: main;
-    display: flex;
-    weight: 150px;
-    height: 150px;
-    align-self: center;
+    flex: 3 100px;
 }
 
 #not-found {
-    grid-area: center;
-    font-size: 200%;
     display: flex;
-    font-weight: bold;
-    align-self: content;
+    font-size: 200%;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    
 }
 
 #not-found h1 {
     font-weight: bold;
 }
 
+html {
+    width: 100%;
+    height: 100%;
+}
 
+#bouton {
+    background-color: #334444;
+    color: white;
+    border: black solid 5px;
+    border-radius: 3px;
+    width: 50px;
+    text-align: center;
 
-.container {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-               "header header header"
-               "center ......  main"
-               "footer  footer  footer";
+}
 
-  }
+#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+#container> div:last-child {
+    align-self: flex-end;
+}
+
+#container> div: p:nth-of-type(2) {
+    align-self: flex;
+}
